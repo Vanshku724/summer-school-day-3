@@ -18,7 +18,7 @@
         }
 
         :root {
-            --main-color: rgb(0, 110, 255);
+            --main-color: rgb(195, 0, 255);
             --color: #ffffff;
             --padding: 16px;
         }
@@ -129,13 +129,43 @@
         .hover-box {
             background-color: #3498db;
             padding: 2rem;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .hover-box:hover {
             background-color: red;
             transform: scale(1.1);
         }
+
+        .box-model {
+            width: 200px;
+            background-color: lightblue;
+            padding: 20px;
+            border: 5px solid navy;
+            margin: 30px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .box-model::before {
+            content: "Margin";
+            position: absolute;
+            top: -1.5rem;
+            left: 0;
+            color: red;
+            font-size: 1rem;
+        }
+
+        .box-model::after {
+            content: "Padding inside border";
+            position: absolute;
+            bottom: -1.5rem;
+            left: 0;
+            font-size: 1rem;
+            color: green;
+        }
+
 
 
         footer {
@@ -238,21 +268,29 @@
         <div class="box2">Relative Box</div>
         <div class="absolute-box">Absolute Box</div>
         <div class="sticky-box">Sticky Box</div>
+        <div class="box-model"> BOX- MODEL</div>
         <div class="overflow-box">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam error illum beatae. Nulla,
             sapiente aspernatur doloribus, velit a iste, hic quasi dolorum commodi temporibus adipisci quos vero
             perferendis praesentium. Illum officiis nulla nesciunt dolores quas ipsum possimus nobis, iusto amet
-            aliquam? Delectus, tempora. A modi reprehenderit et nisi ea! Excepturi veritatis ipsa quaerat eos in quas
-            deserunt explicabo quis distinctio beatae, rem dicta quod! Cum quam ipsum quos doloribus. Nihil fuga facilis
+            aliquam? Delectus, tempora. A modi reprehenderit et nisi ea! Excepturi veritatis ipsa quaerat eos in
+            quas
+            deserunt explicabo quis distinctio beatae, rem dicta quod! Cum quam ipsum quos doloribus. Nihil fuga
+            facilis
             odio suscipit sit optio expedita maxime doloremque, odit cupiditate minima natus beatae autem iure
             perferendis quisquam harum, dolor quas? Dolorem et, corporis laborum cupiditate harum commodi eveniet!
-            Saepe, est adipisci iure, commodi voluptate numquam non dolores nihil, recusandae provident odio similique
-            cumque incidunt. Id unde labore eius reiciendis numquam, aliquam, facilis inventore non quod, vero molestiae
-            exercitationem blanditiis? Magni, optio commodi? Eaque qui nesciunt et molestias, atque quidem explicabo.
+            Saepe, est adipisci iure, commodi voluptate numquam non dolores nihil, recusandae provident odio
+            similique
+            cumque incidunt. Id unde labore eius reiciendis numquam, aliquam, facilis inventore non quod, vero
+            molestiae
+            exercitationem blanditiis? Magni, optio commodi? Eaque qui nesciunt et molestias, atque quidem
+            explicabo.
             Perspiciatis iure animi voluptatum magnam odit officiis, ullam doloremque recusandae. Mollitia placeat a
             sapiente, omnis rerum consequuntur voluptate accusantium iste sed laudantium, voluptatum qui laborum
-            voluptatem praesentium nemo sit! Quam mollitia necessitatibus, quos dolorem maxime nemo aliquam deserunt,
-            aspernatur consequatur illum magnam nihil. Odio veritatis eius, est esse velit consequuntur molestiae vero
+            voluptatem praesentium nemo sit! Quam mollitia necessitatibus, quos dolorem maxime nemo aliquam
+            deserunt,
+            aspernatur consequatur illum magnam nihil. Odio veritatis eius, est esse velit consequuntur molestiae
+            vero
             similique, molestias pariatur, voluptas eveniet laboriosam.
         </div>
         <div class="inline-nav">
