@@ -112,6 +112,8 @@
             height: 12rem;
             overflow: scroll;
             border: 1px solid black;
+            position: relative;
+            left: 50rem;
         }
 
         .inline-nav a {
@@ -164,6 +166,28 @@
             left: 0;
             font-size: 1rem;
             color: green;
+        }
+
+        .box,
+        .card {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+        .box {
+            background-color: #ff4d4d;
+        }
+
+        .box:hover {
+            transform: rotate(15deg);
         }
 
 
@@ -269,6 +293,7 @@
         <div class="absolute-box">Absolute Box</div>
         <div class="sticky-box">Sticky Box</div>
         <div class="box-model"> BOX- MODEL</div>
+        <div class="box">Rotate Me</div>
         <div class="overflow-box">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam error illum beatae. Nulla,
             sapiente aspernatur doloribus, velit a iste, hic quasi dolorum commodi temporibus adipisci quos vero
@@ -302,6 +327,7 @@
         <div class="inline-block-example">Inline Block</div>
         <div class="hover-box">Hover </div>
         <div class="animate-box"></div>
+        
 
 
     </main>
