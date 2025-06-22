@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Day 3 Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            height: 300vh;
+        }
+
+        :root {
+            --main-color: rgb(0, 110, 255);
+            --color: #ffffff;
+            --padding: 16px;
+        }
+
+        header {
+            padding-bottom: 1rem;
+            position: fixed;
+        }
+
+        .links {
+            background-color: var(--main-color);
+        }
+
+        .links li a {
+            color: var(--color);
+            font-size: 4rem;
+            padding: 4rem;
+
+        }
+
+        .links ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .links li a:hover {
+            color: black;
+        }
+
+        main img {
+            float: right;
+        }
+
+        h2 {
+            padding-bottom: 1rem;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .column-1,
+        .column-2 {
+            background-color: var(--main-color);
+            color: var(--color);
+            padding: 3rem;
+            font-size: 3rem;
+            padding-inline: 5rem;
+            margin: 2rem;
+        }
+
+        .box {
+            background-color: red;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        #special {
+            background-color: green;
+        }
+
+        .box2 {
+            position: relative;
+            background-color: blue;
+            color: #ffffff;
+            padding: 1rem;
+            font-size: 1rem;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 4rem;
+            right: 1rem;
+            background: orange;
+            padding: 1rempx;
+        }
+
+        .sticky-box {
+            position: sticky;
+            bottom: 1rem;
+            background: purple;
+            color: white;
+            padding: 1rem;
+        }
+
+        .overflow-box {
+            width: 25rem;
+            height: 12rem;
+            overflow: scroll;
+            border: 1px solid black;
+        }
+
+        .inline-nav a {
+            display: inline;
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+
+        .inline-block-example {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ccc;
+        }
+
+        .hover-box {
+            background-color: #3498db;
+            padding: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-box:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+
+
+        footer {
+            background-color: var(--main-color);
+            color: var(--color);
+            text-align: center;
+            padding: 10px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(4rem);
+            }
+        }
+
+        .animate-box {
+            width: 4rem;
+            height: 4rem;
+            background: rgb(255, 0, 179);
+            animation: slide 2s infinite alternate;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: #bcf9ae;
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+
+            .links ul {
+                flex-direction: column;
+            }
+
+            main img {
+                float: auto;
+            }
+
+            .links li a {
+                color: var(--color);
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            .links li a:hover {
+                color: black;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>WEB DEVELOPMENT</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoRAM8VbTHTlFwB9v3BRa0ZlFUioRZH5lqQ&s"
+            alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde atque laudantium libero, in neque
+            sed ab accusantium provident quos ullam natus minima doloribus illo quasi nam exercitationem doloremque
+            perferendis pariatur totam odit. Accusantium perspiciatis nulla mollitia officia voluptatum iure voluptates,
+            aliquam neque doloribus qui sequi. Quaerat totam possimus, optio soluta autem facilis in nihil, pariatur
+            doloribus ad, placeat delectus? Nisi excepturi exercitationem quaerat laborum fuga cupiditate libero nobis
+            ratione delectus repellendus corrupti doloribus reprehenderit amet distinctio magnam, odit dolores nam
+            perferendis vitae iusto? Vitae minus porro esse, ipsum cupiditate maxime, asperiores sunt recusandae
+            dignissimos voluptates saepe nemo quos eligendi, nulla impedit voluptate harum nihil. Vero voluptate quae
+            dolor omnis libero velit, earum provident? Similique deserunt magni consectetur excepturi consequatur
+            consequuntur molestias dolorem debitis, aut velit. Eos ducimus sapiente corrupti cum mollitia at perferendis
+            eaque repellendus deleniti nobis, praesentium illo asperiores ut animi molestias, enim incidunt voluptatibus
+            vero similique omnis dignissimos? Illo, maxime nisi suscipit adipisci distinctio odit veritatis possimus
+            aliquid cupiditate quam, quo amet. Amet qui fugiat molestias iure odit aspernatur doloremque enim ea,
+            nostrum consequatur, tenetur incidunt nulla quos dolore labore ullam, adipisci saepe voluptates voluptatibus
+            neque ratione voluptate aut exercitationem hic. Ipsam doloribus vero doloremque nulla blanditiis.
+
+        </p>
+        <div class="columns">
+            <div class="column-1">column1</div>
+            <div class="column-2">column2</div>
+        </div>
+        <div class="box" id="special"> CSS specificity</div>
+        <div class="box2">Relative Box</div>
+        <div class="absolute-box">Absolute Box</div>
+        <div class="sticky-box">Sticky Box</div>
+        <div class="overflow-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam error illum beatae. Nulla,
+            sapiente aspernatur doloribus, velit a iste, hic quasi dolorum commodi temporibus adipisci quos vero
+            perferendis praesentium. Illum officiis nulla nesciunt dolores quas ipsum possimus nobis, iusto amet
+            aliquam? Delectus, tempora. A modi reprehenderit et nisi ea! Excepturi veritatis ipsa quaerat eos in quas
+            deserunt explicabo quis distinctio beatae, rem dicta quod! Cum quam ipsum quos doloribus. Nihil fuga facilis
+            odio suscipit sit optio expedita maxime doloremque, odit cupiditate minima natus beatae autem iure
+            perferendis quisquam harum, dolor quas? Dolorem et, corporis laborum cupiditate harum commodi eveniet!
+            Saepe, est adipisci iure, commodi voluptate numquam non dolores nihil, recusandae provident odio similique
+            cumque incidunt. Id unde labore eius reiciendis numquam, aliquam, facilis inventore non quod, vero molestiae
+            exercitationem blanditiis? Magni, optio commodi? Eaque qui nesciunt et molestias, atque quidem explicabo.
+            Perspiciatis iure animi voluptatum magnam odit officiis, ullam doloremque recusandae. Mollitia placeat a
+            sapiente, omnis rerum consequuntur voluptate accusantium iste sed laudantium, voluptatum qui laborum
+            voluptatem praesentium nemo sit! Quam mollitia necessitatibus, quos dolorem maxime nemo aliquam deserunt,
+            aspernatur consequatur illum magnam nihil. Odio veritatis eius, est esse velit consequuntur molestiae vero
+            similique, molestias pariatur, voluptas eveniet laboriosam.
+        </div>
+        <div class="inline-nav">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+        </div>
+
+
+        <div class="inline-block-example">Inline Block</div>
+        <div class="hover-box">Hover </div>
+        <div class="animate-box"></div>
+
+
+    </main>
+    <footer>
+        &copy; 2025 CSS Assignment
+    </footer>
+
+</body>
+
+</html>
